@@ -9,12 +9,14 @@ header {
     align-items: center;
     background-color: blue;
     color: white;
-    border: 15px;
+    border: 5px;
     border-color: black;
+    border-style: solid;
 }
 
 header img {
     margin: 1rem;
+    max-width: 10em;
 }
 
 header h1 {
@@ -25,8 +27,21 @@ header div:nth-child(2) {
     width: 100%;
 }
 
-img {
-    max-width: 10em;
+main h2 {
+    text-align: center;
+}
+
+main p {
+    text-align: center;
+    font-style: italic;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    background-color: blueviolet;
+    border: 2px black solid;
+    border-radius: 5px;
 }
 
 #content{
