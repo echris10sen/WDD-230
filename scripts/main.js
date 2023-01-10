@@ -1,9 +1,7 @@
 const today = new Date();
 
-const dateoptions = {
-    year: 'numeric',
-    month: 'numeric',
-    day: 'numeric'
-};
+//Display current year
+document.querySelector('#currentyear').textContent = today.getFullYear();
 
-document.querySelector('#lastmodified').textContent = today.toLocaleDateString('en-US', dateoptions);
+//This sets last modified date
+document.querySelector('#lastmodified').textContent = document.lastModified;
