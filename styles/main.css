@@ -46,5 +46,6 @@ footer {
 
 #content{
     margin: 0 auto;
-    width: 800px;
+    width: auto;
+    max-width: 800px;
 }

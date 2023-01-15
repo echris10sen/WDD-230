@@ -1,0 +1,11 @@
+@media screen and (max-width: 640px){
+    header, footer {
+        background-color: crimson;
+        border: 1px black double;
+        border-radius: 5px;
+    }
+
+    #content {
+        margin: 0 20px;
+    }
+}
