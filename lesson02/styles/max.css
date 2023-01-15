@@ -1,0 +1,29 @@
+@media screen and (min-width: 767px) {
+    main{
+        margin-top: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        max-width: 1270px;
+        gap: 10px;
+        
+    }
+
+    div {
+        justify-self: center;
+    }
+    div:nth-child(2) {
+        justify-self: center;
+    }
+
+    div:nth-child(3) {
+        min-width: 300px;
+        max-width: 300px;
+        grid-column: auto;
+    }
+
+    div:nth-child(3) img {
+        min-width: 300px;
+    }
+}

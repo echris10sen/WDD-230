@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto&display=swap');
+
+body{
+    font-family: 'Roboto', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header{
+    color: white;
+    background-color: navy;
+    font-size: xx-large;
+    text-align: center;
+    margin: 0 auto 5px auto;
+    max-width: 1200px;
+}
+
+#name {
+    font-size: 30px;
+}
+
+main {
+    display:grid;
+    grid-template-columns: 1fr;
+    margin: 5px auto 0 auto;
+}
+
+.card {
+    max-width: 300px;
+    background-color: lightgray;
+    border: 2px black solid;
+    border-radius: 5px;
+    padding: 5px;
+    justify-self: center;
+    margin: 0 0 1em 0;
+}
+
+h1 {
+    background-color: blue;
+    color: white;
+    border: 2px black solid;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-top: -1px;
+    margin-left: -1px;
+}
+
+img {
+    max-width: 300px;
+}
+
+footer {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
