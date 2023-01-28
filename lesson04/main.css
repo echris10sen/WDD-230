@@ -1,0 +1,21 @@
+/* Hamberger menue stuffs */
+
+#navbar {
+    display:none;
+}
+
+#menu-open {
+    display:none;
+}
+
+#navbar.menu-active{
+    display: flex;
+}
+
+#menu-open.menu-active{
+    display:inline;
+}
+
+#menu-close.menu-active{
+    display: none;
+}

@@ -1,47 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --primary-color: #41262e;
+    --border-color: #3f2653;
+    --secondary-color: #f76b20;
+    --text-color: white;
+    --text-color-hover: black;
+    --font-family: 'Roboto', sans-serif;
+}
+
 body{
     font-size: larger;
+    font-family: var(--font-family);
 }
 
 header {
     margin:0 auto;
     text-align: center;
-    border: 2px black solid;
-    max-width: 90%;
+    border: 2px var(--border-color) solid;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    /* max-width: 90%; */
 }
 nav{
-    background-color: lavender;
-    border-top: 2px solid black;
+    background-color: var(--primary-color);
+    border-top: 2px solid var(--border-color);
+    /* max-width: 90%; */
+    margin: 0 auto;
 }
 nav ul {
     display: flex;
     flex-direction: column;
     list-style: none;
     text-align: center;
-    padding-inline-start: 0%;
-    
+    padding-inline-start: 0%;    
+    margin: 0;
 }
 
 nav a {
     display: block;
-    color: black;
+    color: var(--text-color);
     text-decoration: none;
-    background-color: lavender;
-    border: 1px black solid;
+    background-color: var(--primary-color);
+    border: 1px var(--border-color) solid;
     padding: 1rem;
 }
 
+nav ul li.active a {
+    background-color: var(--secondary-color);
+    color: var(--text-color-hover);
+}
+
 nav a:hover {
-    background-color: violet;
+    background-color: var(--secondary-color);
+    color: var(--text-color-hover);
 }
 
 nav a:link a:visited a:hover {
-    color: black;
+    color: var(--text-color);
 }
 
 main {
     text-align: center;
 }
 
+main img {
+    max-width: 90%;
+}
+
+table {
+    border: 2px solid var(--border-color);
+    border-collapse: collapse;
+    margin: 1rem auto;
+}
+
+td {
+    border: 2px solid var(--border-color);
+    padding: 1rem;
+}
+
 footer {
     text-align: center;
+    color: var(--text-color);
+    background-color: var(--primary-color);
+}
+
+footer p {
+    margin: 0;
+    padding: 1rem;
+}
+
+#nav_bar_design {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    display: block;
+    text-decoration: none;
+    border: 1px var(--border-color) solid;
+    padding: 1rem;
+    max-width: fit-content;
+    margin: 0;
+}
+
+#nav_bar_hover_design {
+    background-color: var(--secondary-color);
+    color: var(--text-color-hover);
+    display: block;
+    text-decoration: none;
+    border: 1px var(--border-color) solid;
+    max-width: fit-content;
+    padding: 1rem;
+    margin: 0;
+}
+
+#header_design {
+    max-width: fit-content;
+    margin: 0;
+    padding: 1rem;
+    display: block;
+}
+
+#body_design {
+    max-width: fit-content;
+    margin:0;
+    padding: 1rem;
+}
+
+#table_header {
+    display: none;
 }
