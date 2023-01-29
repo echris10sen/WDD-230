@@ -8,10 +8,12 @@
     --text-color-hover: black;
     --font-family: 'Roboto', sans-serif;
 }
-
+    
 body{
     font-size: larger;
     font-family: var(--font-family);
+    max-width: 800px;
+    margin: auto;
 }
 
 header {
@@ -32,26 +34,31 @@ nav ul {
     display: flex;
     flex-direction: column;
     list-style: none;
-    text-align: center;
-    padding-inline-start: 0%;    
+    padding-inline-start: 0%;
+    width: 100%;    
     margin: 0;
+    background-color: var(--primary-color);
 }
 
+nav ul li {
+    background-color: var(--primary-color);
+    width: 100%;
+}
 nav a {
     display: block;
     color: var(--text-color);
     text-decoration: none;
-    background-color: var(--primary-color);
-    border: 1px var(--border-color) solid;
+    background-color: transparent;
+    /* border: 1px var(--border-color) solid; */
     padding: 1rem;
 }
 
-nav ul li.active a {
+nav ul li.active {
     background-color: var(--secondary-color);
     color: var(--text-color-hover);
 }
 
-nav a:hover {
+nav ul li:hover {
     background-color: var(--secondary-color);
     color: var(--text-color-hover);
 }
