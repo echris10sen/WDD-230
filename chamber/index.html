@@ -7,19 +7,29 @@
     <meta name="description" content="A chamber of Commerce site for Redford, a fake town for WDD 230 2023">
     <link rel="icon" href="./images/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <script defer src="./scripts/chamber.js"></script>
     <title>Redford Chamber of Commerce</title>
 </head>
 <body>
     <header>
-        <img src="./images/chamber_of_commerce.png" alt="Logo">
+        <img src="./images/chamber_of_commerce.webp" alt="Logo">
         <h1>Redford Chamber of Commerce</h1>
         <nav>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
+            <a href=""><img src="./images/Official-Facebook-Logo-2.webp" alt="Facebook Logo"></a>
+            <a href=""><img src="./images/Twitter social icons - rounded square - blue.png" alt="Twitter Logo"></a>
+            <button id="menu">
+                <span id="closed" class="">&equiv;</span>
+                <span id="open" class="">X</span>
+            </button>
+            <ul id="navbar" class="">
+                <li><a href="">Discover</a></li>
+                <li><a href="">Directory</a></li>
+                <li><a href="">Join</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
         </nav>
-        <p></p>
+        <p id="currentdate"></p>
     </header>
     <main>
         <div>Hero Image and Call to Action</div>
@@ -32,12 +42,12 @@
         <div>Company Spotlight 3</div>
     </main>
     <footer>
-        <img src="./images/chamber_of_commerce.png" alt="Logo">
+        <img src="./images/chamber_of_commerce.webp" alt="Logo">
         <p>Contact Info:</p>
         <a href=""><img src="" alt="Map">Location Map</a>
         <hr>
         <p>&copy; <span id="currentyear"></span> | Eric Christensen | WDD 230 Project</p>
-        <p>Last Updated: <span id="lastmodified"></span></p>    <p>&copy;</p>
+        <p>Last Updated: <span id="lastmodified"></span></p>
     </footer>
 </body>
 </html>
