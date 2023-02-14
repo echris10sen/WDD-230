@@ -14,20 +14,60 @@ body{
 }
 
 header img {
-    max-width: 20%;
+    width: 100%;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+header h1 {
+    display: block;
+    font-size: large;
+    width: 200px;
+    text-align: center;
 }
 
 header nav {
     background-color: var(--primary-color);
+    display: inline;
+    margin-right: 0;
+    text-align: right;
+    grid-column: 3/4;
+    grid-row: 1/3;
 }
+
 header nav button {
     background-color: var(--primary-color);
     color: var(--text-color);
-    border-color: var(--secondary-color);
+    border: var(--secondary-color) solid;
+    text-align: center;
+    min-width: 3rem;
+    min-height: 3rem;
+    font-size: x-large;
     
 }
+#currentdate {
+    margin: 0;
+    grid-column: 2/3;
+    text-align: center;
+    border: var(--secondary-color) solid;
+}
+
 #navbar {
+    margin-top: 0;
+    margin-bottom: 0;
     display:none;
+    border: var(--border-color) solid;
+    right:0;
+}
+
+#navbar li {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
 }
 
 #navbar.active_button {
@@ -48,12 +88,12 @@ header nav button {
 
 #closed.active_button {
     display: none;
-    color: yellow;
 }
 
 header nav ul#navbar {
     list-style: none;
     padding-inline-start: 0%;
+    position: relative;
 }
 
 header nav ul li a {
@@ -73,6 +113,70 @@ header nav a img {
     max-width: 20px;
 }
 
+main {
+    background-color: var(--primary-color);
+}
+
+main #main-grid {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+main .grid-item {
+    margin: auto;
+    width: 95%;
+    height: 200px;
+    background-color: var(--border-color);
+    border: var(--secondary-color) solid 2px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+main .grid-item.spotlight {
+    height: fit-content;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+}
+
+main .grid-item.spotlight1 {
+    width: 80%;
+}
+
+main .grid-item.spotlight2 {
+    width: 80%;
+}
+
+main .grid-item.spotlight3 {
+    display: none;
+    width: 80%;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color:var(--text-color);
+    text-align: center;
+}
+
+footer a {
+    color:var(--text-color);
+}
+
+footer #footerid {
+    margin: 0;
+    padding: 20px;
+}
+
 footer img {
-    max-width: 250px;
+    margin: auto;
+    max-width: 50%;
+    display: block;
+    
 }

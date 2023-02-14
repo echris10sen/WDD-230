@@ -14,7 +14,7 @@
 <body>
     <header>
         <img src="./images/chamber_of_commerce.webp" alt="Logo">
-        <h1>Redford Chamber of Commerce</h1>
+        <h1>Chamber of Commerce Redford</h1>
         <nav>
             <a href=""><img src="./images/Official-Facebook-Logo-2.webp" alt="Facebook Logo"></a>
             <a href=""><img src="./images/Twitter social icons - rounded square - blue.png" alt="Twitter Logo"></a>
@@ -32,22 +32,28 @@
         <p id="currentdate"></p>
     </header>
     <main>
-        <div>Hero Image and Call to Action</div>
-        <div>News</div>
-        <div>Events</div>
-        <div>Weather</div>
-        <div>Join</div>
-        <div>Company Spotlight 1</div>
-        <div>Company Spotlight 2</div>
-        <div>Company Spotlight 3</div>
+        <div id="main-grid">
+            <div class="grid-item">Hero Image and Call to Action</div>
+            <div class="grid-item">News</div>
+            <div class="grid-item">Events</div>
+            <div class="grid-item">Weather</div>
+            <div class="grid-item">Join</div>
+            <div class="grid-item spotlight">
+                <div class="grid-item spotlight1">Company Spotlight 1</div>
+                <div class="grid-item spotlight2">Company Spotlight 2</div>
+                <div class="grid-item spotlight3">Company Spotlight 3</div>
+            </div>
+        </div>
     </main>
     <footer>
         <img src="./images/chamber_of_commerce.webp" alt="Logo">
-        <p>Contact Info:</p>
-        <a href=""><img src="" alt="Map">Location Map</a>
+        <p>Contact Info: redfordcoc@cocsite.com</p>
+        <p>12345 McDermand St. Redford, NY</p>
+        <a href="https://www.google.com/maps/@43.8373387,-103.1872692,17.46z"><img src="./images/Maps_Logo.png" alt="Map"></a>
+        <a href="https://www.google.com/maps/@43.8373387,-103.1872692,17.46z">Location Map</a>
         <hr>
         <p>&copy; <span id="currentyear"></span> | Eric Christensen | WDD 230 Project</p>
-        <p>Last Updated: <span id="lastmodified"></span></p>
+        <p id="footerid">Last Updated: <span id="lastmodified"></span></p>
     </footer>
 </body>
 </html>
