@@ -8,14 +8,15 @@
     <link rel="icon" href="./images/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/medium.css">
     <script defer src="./scripts/chamber.js"></script>
     <title>Redford Chamber of Commerce</title>
 </head>
 <body>
-    <header>
-        <img src="./images/chamber_of_commerce.webp" alt="Logo">
-        <h1>Chamber of Commerce Redford</h1>
-        <nav>
+    <header id="header-grid">
+        <img class="grid-item" src="./images/chamber_of_commerce.webp" alt="Logo">
+        <h1 class="grid-item">Chamber of Commerce <span id="redford">Redford</span></h1>
+        <nav class="grid-item">
             <a href=""><img src="./images/Official-Facebook-Logo-2.webp" alt="Facebook Logo"></a>
             <a href=""><img src="./images/Twitter social icons - rounded square - blue.png" alt="Twitter Logo"></a>
             <button id="menu">
@@ -29,15 +30,15 @@
                 <li><a href="">Contact</a></li>
             </ul>
         </nav>
-        <p id="currentdate"></p>
+        <p class="grid-item" id="currentdate"></p>
     </header>
     <main>
         <div id="main-grid">
-            <div class="grid-item">Hero Image and Call to Action</div>
-            <div class="grid-item">News</div>
-            <div class="grid-item">Events</div>
-            <div class="grid-item">Weather</div>
-            <div class="grid-item">Join</div>
+            <div class="grid-item" id="hero-box">Hero Image and Call to Action</div>
+            <div class="grid-item" id="news-box">News</div>
+            <div class="grid-item" id="event-box">Events</div>
+            <div class="grid-item" id="weather-box">Weather</div>
+            <div class="grid-item" id="join-box">Join</div>
             <div class="grid-item spotlight">
                 <div class="grid-item spotlight1">Company Spotlight 1</div>
                 <div class="grid-item spotlight2">Company Spotlight 2</div>
