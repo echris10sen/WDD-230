@@ -21,13 +21,17 @@
         font-weight: bold;
     }
     div#main-grid {
+        width: 95%;
         margin: auto;
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: repeat(5,1fr);
-        gap: 2.5px;
-        row-gap: 2.5px;
+        grid-template-columns: repeat(3,auto);
+        grid-template-rows: repeat(5,auto);
+        row-gap: 5px;
+        column-gap: 7.5px;
     }
-    
+    main .grid-item {
+        width:100%;
+    }
+
     #hero-box{
         grid-column: 1/4;
         grid-row: 1/2;
@@ -49,6 +53,7 @@
         grid-row: 4/5;
     }
     div.grid-item.spotlight {
+        width: 100%;
         grid-column: 1/4;
         grid-row: 3/4;
         /* margin-top: 2.5px;

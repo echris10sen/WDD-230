@@ -63,6 +63,9 @@ header nav button {
     display:none;
     border: var(--border-color) solid;
     right:0;
+    position: absolute;
+    background-color: var(--primary-color);
+    width: 20%;
 }
 
 #navbar li {
@@ -93,7 +96,7 @@ header nav button {
 header nav ul#navbar {
     list-style: none;
     padding-inline-start: 0%;
-    position: relative;
+    /* position: relative; */
 }
 
 header nav ul li a {
@@ -139,8 +142,8 @@ main .grid-item.spotlight {
     height: fit-content;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
+    /* margin-left: 2.5%;
+    margin-right: 2.5%; */
     display: grid;
     grid-template-columns: 1fr;
     position: relative;
