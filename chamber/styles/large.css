@@ -1,0 +1,76 @@
+@media screen and (min-width: 1060px) {
+    body {
+        background-color: var(--border-color);
+    }
+
+    /* Header Stuff */
+    header #menu {
+        display: none;
+    }
+    header #currentdate{
+        margin-bottom: 1rem;
+    }
+
+    /* Main Stuff */
+    main {
+        width: 90%;
+        margin: 1rem auto 1rem auto;
+    }
+
+    /* Main Grid */
+    div#main-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+
+    div.grid-item{
+    
+    }
+
+    #hero-box{
+        grid-column: 2/4;
+        grid-row: 1/3;
+        height: 100%;
+    }
+
+    #news-box{
+        grid-column: 2/4;
+        grid-row: 3/4;
+        margin: 0;
+    }
+
+    #event-box{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        height: 100%;
+        margin:0;
+    }
+
+    #weather-box{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        margin: 0;
+        height: 100%;
+    }
+
+    #join-box{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        margin: 0;
+    }
+
+    /* Spotlight Grid */
+    div.grid-item.spotlight {
+        width: 100%;
+        height: 93.25%;
+        margin: 0;
+        grid-column: 4/5;
+        grid-row: 1/4;
+        grid-template-rows: repeat(3, auto);
+        grid-template-columns: none;
+        gap: 0;
+    }
+    div.grid-item.spotlight3 {
+        display: block;
+    }
+}
