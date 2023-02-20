@@ -73,4 +73,33 @@
     div.grid-item.spotlight3 {
         display: block;
     }
+
+
+
+    footer img#logo {
+        width: 10%;
+        margin: auto 5% auto 10%;
+        /* display: inline; */
+    }
+    
+    footer a img#map {
+        width: fit-content;
+        max-width: 20%;
+        margin: auto 0 auto auto;
+        /* display: inline; */
+    }
+
+    footer #contact{
+        text-align: left;
+    }
+
+    footer #footertop {
+        display:flex;
+        flex-direction: row;
+    }
+
+    footer #mapa {
+        margin: auto 30% auto 0;
+    }
+
 }

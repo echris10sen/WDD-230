@@ -166,6 +166,7 @@ footer {
     background-color: var(--primary-color);
     color:var(--text-color);
     text-align: center;
+    padding-bottom: auto;
 }
 
 footer a {
@@ -182,4 +183,8 @@ footer img {
     max-width: 50%;
     display: block;
     
+}
+
+footer #myname {
+    font-weight: bold;
 }
