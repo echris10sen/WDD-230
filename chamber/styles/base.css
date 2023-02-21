@@ -119,7 +119,15 @@ header nav a img {
 main {
     background-color: var(--primary-color);
 }
-
+#banner {
+    display: none;
+    position: sticky;
+    margin: auto;
+    text-align: center;
+    background-color: #f76b20;
+    top: 0px;
+    z-index: 999;
+}
 main #main-grid {
     padding-top: 15px;
     padding-bottom: 15px;

@@ -3,14 +3,38 @@
         background-color: var(--border-color);
     }
 
-    /* Header Stuff */
+    /* Header Stuff */    
     header #menu {
         display: none;
+    }
+
+    header h1.grid-item {
+        grid-column: 1/2;
+    }
+
+    header nav {
+        grid-column: 2/4;
+    }
+
+    header #navbar {
+        display: flex;
+        right:auto;
+        flex-direction: row;
+        width: 33%;
+    }
+
+    header #navbar li {
+        margin: auto;
     }
     header #currentdate{
         margin-bottom: 1rem;
     }
 
+    header nav a img {
+        width: 10%;
+        max-width: none;
+        display: inline;
+    }
     /* Main Stuff */
     main {
         width: 90%;
@@ -20,7 +44,7 @@
     /* Main Grid */
     div#main-grid {
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(3,1fr);
+        grid-template-rows: repeat(3, 1fr);
     }
 
     div.grid-item{

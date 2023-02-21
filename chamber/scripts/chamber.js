@@ -21,3 +21,8 @@ document.querySelector('#currentdate').textContent = today.toLocaleString("en-us
 document.querySelector('#lastmodified').textContent = document.lastModified;
 
 // adding comment to update
+
+if (today.getDay() == 1 || today.getDay() == 2) {
+    console.log(today.getDay());
+    document.querySelector('.active_banner').style.display = "block";
+}
