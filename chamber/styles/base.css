@@ -170,6 +170,10 @@ main .grid-item.spotlight3 {
     width: 80%;
 }
 
+main .grid-item#join-box {
+    display: none;
+}
+
 footer {
     background-color: var(--primary-color);
     color:var(--text-color);

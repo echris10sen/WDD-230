@@ -83,6 +83,10 @@
         margin: 0;
     }
 
+main .grid-item#join-box{
+    display: block;
+}
+
     /* Spotlight Grid */
     div.grid-item.spotlight {
         width: 100%;
