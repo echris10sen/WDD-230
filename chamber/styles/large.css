@@ -47,10 +47,6 @@
         grid-template-rows: repeat(3, 1fr);
     }
 
-    div.grid-item{
-    
-    }
-
     #hero-box{
         grid-column: 2/4;
         grid-row: 1/3;

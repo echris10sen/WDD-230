@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./styles/medium.css">
     <link rel="stylesheet" href="./styles/large.css">
     <script defer src="./scripts/chamber.js"></script>
+    <script defer src="./scripts/windchill.js"></script>
     <title>Redford Chamber of Commerce</title>
 </head>
 <body>
@@ -20,7 +21,7 @@
         <h1 class="grid-item">Chamber of Commerce <span id="redford">Redford</span></h1>
         <nav class="grid-item">
             <a href=""><img src="./images/Official-Facebook-Logo-2.webp" alt="Facebook Logo"></a>
-            <a href=""><img src="./images/Twitter social icons - rounded square - blue.png" alt="Twitter Logo"></a>
+            <a href=""><img src="./images/Twitter social icons - rounded square - blue.webp" alt="Twitter Logo"></a>
             <button id="menu">
                 <span id="closed" class="">&equiv;</span>
                 <span id="open" class="">X</span>
@@ -36,10 +37,20 @@
     </header>
     <main>
         <div id="main-grid">
-            <div class="grid-item" id="hero-box">Hero Image and Call to Action</div>
+            <div class="grid-item" id="hero-box">
+                <picture>
+                    <source media="(min-width:1060px)" srcset="./images/wdd230-org.jpg">
+                    <source media="(min-width:640px)" srcset="./images/wdd230-org-med.jpg">
+                    <img src="./images/wdd230-org-small.jpg" alt="Hero Img">
+                </picture>
+            </div>
             <div class="grid-item" id="news-box">News</div>
             <div class="grid-item" id="event-box">Events</div>
-            <div class="grid-item" id="weather-box">Weather</div>
+            <div class="grid-item" id="weather-box">Weather
+                <p>Current Temp: <span id="temp"></span></p>
+                <p>Windspeed: <span id="windspeed"></span></p>
+                <p>Windchill: <span id="windchill"></span></p>
+            </div>
             <div class="grid-item" id="join-box">Join</div>
             <div class="grid-item spotlight">
                 <div class="grid-item spotlight1">Company Spotlight 1</div>
@@ -55,7 +66,7 @@
                 <p>Contact Info: redfordcoc@cocsite.com</p>
                 <p>12345 McDermand St. Redford, NY</p>
             </div>
-            <a href="https://www.google.com/maps/@43.8373387,-103.1872692,17.46z"><img id='map' src="./images/Maps_Logo.png" alt="Map"></a>
+            <a href="https://www.google.com/maps/@43.8373387,-103.1872692,17.46z"><img id='map' src="./images/Maps_Logo.webp" alt="Map"></a>
             <a id="mapa" href="https://www.google.com/maps/@43.8373387,-103.1872692,17.46z">Location Map</a>
         </div>
         <hr>
