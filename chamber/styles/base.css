@@ -205,3 +205,8 @@ footer img {
 footer #myname {
     font-weight: bold;
 }
+
+.discover {
+    min-width: 100%;
+    max-width: 100%;
+}
