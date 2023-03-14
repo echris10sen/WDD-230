@@ -8,6 +8,10 @@
         display: none;
     }
 
+    header a.grid-item {
+        display: flex;
+    }
+
     header h1.grid-item {
         grid-column: 1/2;
     }
