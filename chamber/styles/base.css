@@ -50,6 +50,11 @@ header nav button {
     font-size: x-large;
     
 }
+.lastVisit {
+    text-align: center;
+    color: var(--text-color-hover);
+    background-color: var(--secondary-color);
+}
 #currentdate {
     margin: 0;
     grid-column: 2/3;
@@ -146,12 +151,22 @@ main .grid-item {
     color: var(--text-color);
 }
 
+main .discover-grid {
+    height: auto;
+    box-sizing: border-box;
+}
+
+main div#main-grid div.grid-item p {
+    margin-bottom: 0;
+    padding-bottom: 16px;
+    color: var(--text-color);
+    height: auto;
+}
+
 main .grid-item.spotlight {
     height: fit-content;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    /* margin-left: 2.5%;
-    margin-right: 2.5%; */
     display: grid;
     grid-template-columns: 1fr;
     position: relative;
@@ -183,7 +198,7 @@ footer {
     background-color: var(--primary-color);
     color:var(--text-color);
     text-align: center;
-    padding-bottom: auto;
+    padding-bottom: 1rem;
 }
 
 footer a {
@@ -209,4 +224,6 @@ footer #myname {
 .discover {
     min-width: 100%;
     max-width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
