@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A chamber of Commerce site for Redford, a fake town for WDD 230 2023, Join Here!!!">
+    <link rel="icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/large.css">
+    <script defer src="./scripts/chamber.js"></script>
+    <script defer src="./scripts/join.js"></script>
+    <title>Redford Chamber of Commerce</title>
+</head>
+<body>
+    <header>
+        <img class="grid-item" src="./images/chamber_of_commerce.webp" alt="Logo">
+        <h1 class="grid-item">Chamber of Commerce <span id="redford">Redford</span></h1>
+        <nav class="grid-item">
+            <a href=""><img src="./images/Official-Facebook-Logo-2.webp" alt="Facebook Logo"></a>
+            <a href=""><img src="./images/Twitter social icons - rounded square - blue.webp" alt="Twitter Logo"></a>
+            <button id="menu">
+                <span id="closed" class="">&equiv;</span>
+                <span id="open" class="">X</span>
+            </button>
+            <ul id="navbar" class="">
+                <li><a href="./discover.html">Discover</a></li>
+                <li><a href="">Directory</a></li>
+                <li><a href="">Join</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+        <p class="grid-item" id="currentdate"></p>
+    </header>
+    <main>
+        <div id="main-grid">
+            <form action="thankyou.html" method="get">
+                
+                <label for="firstName">First Name: <span class="req">* </span><input type="text" name="firstName" id="lastName" required></label>
+                
+                <label for="lastName">Last Name: <span class="req">* </span><input type="text" name="lastName" id="lastName" required></label>
+                
+                <label for="title">Title: <input type="text" name="title" id="title" minlength="7"></label>
+                
+                <label for="mail">E-Mail: <span class="req">* </span><input type="email" name="mail" id="mail" required placeholder="example@hotmail.com"></label>
+                
+                <label for="cell">Phone #: <span class="req">* </span><input type="tel" name="cell" id="cell" required></label>
+                
+                <label for="busName">Business Name: <span class="req">* </span><input type="text" name="busName" id="busName" required></label>
+                
+                <p>Membership Level</p>
+                <div id="radio">
+                    <label for="nonProfit"><input type="radio" name="memlevel" id="nonProfit" checked>Non-Profit</label>
+            
+                    <label for="bronze"><input type="radio" name="memlevel" id="bronze">Bronze</label>
+                
+                    <label for="silver"><input type="radio" name="memlevel" id="silver">Silver</label>
+                    
+                    <label for="gold"><input type="radio" name="memlevel" id="gold">Gold</label>
+                </div>
+                <label for="busDesc">Business Description:<textarea name="busDesc" id="busDesc" cols="30" rows="10"></textarea></label>
+                
+                <input type="hidden" name="formDate" id="formDate" value="">
+
+                <button type="submit" id="submit" value="Join the Chamber!">Join the Chamber!</button>
+            </form>
+
+            <div id="benefits">
+                <h1>Membership Levels Benefits</h1>
+                <h2>NP Membership</h2>
+                    <p>- For non profit organizations there is no fee</p>
+                <h2>Bronze Membership</h2>
+                    <p>- 15% discount on events</p>
+                    <p>- 10% discount on advertising</p>
+                    <p>- Fee of $90/month</p>
+
+                <h2>Silver Membership</h2>
+                    <p>- 15% discount on events</p>
+                    <p>- 10% discount on advertising</p>
+                    <p>- Free participation in the trade fair</p>
+                    <p>- Fee of $100/month</p>
+
+                <h2>Gold Membership</h2>
+                    <p>- 50% discount on events</p>
+                    <p>- 50% discount on advertising</p>
+                    <p>- Free participation in trade fair</p>
+                    <p>- 5 free featured ads per year</p>
+                    <p>- 1 free training per quarter</p>
+                    <p>- Fee of $250/month</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footertop">
+            <img id="logo" src="./images/chamber_of_commerce.webp" alt="Logo">
+            <div id="contact">
+                <p>Contact Info: redfordcoc@cocsite.com</p>
+                <p>12345 McDermand St. Redford, NY</p>
+            </div>
+            <a href="https://www.google.com/maps/@43.8373387,-103.1872692,17.46z"><img id='map' src="./images/Maps_Logo.webp" alt="Map"></a>
+            <a id="mapa" href="https://www.google.com/maps/@43.8373387,-103.1872692,17.46z">Location Map</a>
+        </div>
+        <hr>
+        <p>&copy; <span id="currentyear"></span> | <span id="myname">Eric Christensen</span> | WDD 230 Project | Last Updated: <span id="lastmodified"></span></p>
+    </footer>
+</body>
+</html>
