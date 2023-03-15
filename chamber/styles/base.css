@@ -293,6 +293,10 @@ footer #myname {
     color: var(--text-color);
 }
 
+#firstName, #lastName, #title, #mail, #cell, #busName{
+    display: block;
+}
+
 .discover {
     min-width: 100%;
     max-width: 100%;

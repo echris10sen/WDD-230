@@ -3,8 +3,10 @@ document.querySelector("#formDate").value = formDate.toDateString();
 
 function validate() {
     let value = document.querySelector('#title').value;
-    const regEx = new RegExp("\w");
-    return regEx.test(value);
-}
+    console.log(value);
+    const regEx = new RegExp("\w*");
+    let valid = regEx.test(value);
+    console.log(valid)
+    return valid;
 
-document.querySelector("#submit").addEventListener("click", validate)
+}
