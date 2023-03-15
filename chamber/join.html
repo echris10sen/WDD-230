@@ -20,15 +20,15 @@
         <h1 class="grid-item">Chamber of Commerce <span id="redford">Redford</span></h1>
         <nav class="grid-item">
             <a href=""><img src="./images/Official-Facebook-Logo-2.webp" alt="Facebook Logo"></a>
-            <a href=""><img src="./images/Twitter social icons - rounded square - blue.webp" alt="Twitter Logo"></a>
+            <a href=""><img src="./images/TwitterSocialIcons-roundedSquare-blue.webp" alt="Twitter Logo"></a>
             <button id="menu">
                 <span id="closed" class="">&equiv;</span>
                 <span id="open" class="">X</span>
             </button>
             <ul id="navbar" class="">
                 <li><a href="./discover.html">Discover</a></li>
-                <li><a href="">Directory</a></li>
-                <li><a href="">Join</a></li>
+                <li><a href="./directory.html">Directory</a></li>
+                <li><a href="./join.html">Join</a></li>
                 <li><a href="">Contact</a></li>
             </ul>
         </nav>
@@ -42,7 +42,7 @@
                 
                 <label for="lastName">Last Name: <span class="req">* </span><input type="text" name="lastName" id="lastName" required></label>
                 
-                <label for="title">Title: <input type="text" name="title" id="title" minlength="7"></label>
+                <label for="title">Title: <input type="text" name="title" id="title" minlength="7" pattern="[- A-Za-z]+"></label>
                 
                 <label for="mail">E-Mail: <span class="req">* </span><input type="email" name="mail" id="mail" required placeholder="example@hotmail.com"></label>
                 

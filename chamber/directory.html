@@ -4,18 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A chamber of Commerce site for Redford, a fake town for WDD 230 2023">
+    <meta name="description" content="A chamber of Commerce site for Redford, a fake town for WDD 230 2023, Directory Here!!!">
     <link rel="icon" href="./images/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/medium.css">
     <link rel="stylesheet" href="./styles/large.css">
     <script defer src="./scripts/chamber.js"></script>
-    <script defer src="./scripts/windchill.js"></script>
     <title>Redford Chamber of Commerce</title>
 </head>
 <body>
-    <p id="banner" class="active_banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
     <header>
         <img class="grid-item" src="./images/chamber_of_commerce.webp" alt="Logo">
         <h1 class="grid-item">Chamber of Commerce <span id="redford">Redford</span></h1>
@@ -35,30 +33,7 @@
         </nav>
         <p class="grid-item" id="currentdate"></p>
     </header>
-    <main>
-        <div id="main-grid">
-            <div class="grid-item" id="hero-box">
-                <picture>
-                    <source media="(min-width:1060px)" srcset="./images/city-photo3.webp">
-                    <source media="(min-width:640px)" srcset="./images/city-photo3.webp">
-                    <img src="./images/city-photo3.webp" alt="Hero Img">
-                </picture>
-            </div>
-            <div class="grid-item" id="news-box">News</div>
-            <div class="grid-item" id="event-box">Events</div>
-            <div class="grid-item" id="weather-box">Weather
-                <p>Current Temp: <span id="temp"></span></p>
-                <p>Windspeed: <span id="windspeed"></span></p>
-                <p>Windchill: <span id="windchill"></span></p>
-            </div>
-            <div class="grid-item" id="join-box">Join</div>
-            <div class="grid-item spotlight">
-                <div class="grid-item spotlight1">Company Spotlight 1</div>
-                <div class="grid-item spotlight2">Company Spotlight 2</div>
-                <div class="grid-item spotlight3">Company Spotlight 3</div>
-            </div>
-        </div>
-    </main>
+    <main></main>
     <footer>
         <div id="footertop">
             <img id="logo" src="./images/chamber_of_commerce.webp" alt="Logo">
@@ -71,6 +46,8 @@
         </div>
         <hr>
         <p>&copy; <span id="currentyear"></span> | <span id="myname">Eric Christensen</span> | WDD 230 Project | Last Updated: <span id="lastmodified"></span></p>
+   
     </footer>
+    
 </body>
 </html>
