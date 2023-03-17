@@ -45,6 +45,7 @@ const displayBusinessData = (companies) => {
         // populate the HTML
         card.setAttribute('class', 'card')
         img.setAttribute('src', `${company.imagesrc}`);
+        img.setAttribute('alt', 'business photo')
         name.textContent = company.name;
         address.textContent = company.address;
         ctiyState.textContent = `${company.city}, ${company.state}`;
