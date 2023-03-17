@@ -131,4 +131,9 @@
     footer #mapa {
         margin: auto 20% auto 0;
     }
+
+    /* Directory */
+    .default-grid, .active-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

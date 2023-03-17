@@ -1,0 +1,94 @@
+{
+    "companies": [
+      {
+        "name": "Bogus Company",
+        "address": "123 Main Street",
+        "city" : "Redford",
+        "state" : "ST",
+        "phone-number": "(909) 555-9099",
+        "siteurl": "http://www.boguscompany.com",
+        "imagesrc" : "./images/city-photo3.webp",
+        "membershipLvl" : "gold"
+      },
+      {
+        "name": "Bogus Company",
+        "address": "123 Main Street",
+        "city" : "Redford",
+        "state" : "ST",
+        "phone-number": "(909) 555-9099",
+        "siteurl": "http://www.boguscompany.com",
+        "imagesrc" : "./images/loadingPlaceholder.webp",
+        "membershipLvl" : "silver"
+      },
+      {
+        "name": "Bogus Company",
+        "address": "123 Main Street",
+        "city" : "Redford",
+        "state" : "ST",
+        "phone-number": "(909) 555-9099",
+        "siteurl": "http://www.boguscompany.com",
+        "imagesrc" : "./images/loadingPlaceholder.webp",
+        "membershipLvl" : "silver"
+      },
+      {
+        "name": "Bogus Company",
+        "address": "123 Main Street",
+        "city" : "Redford",
+        "state" : "ST",
+        "phone-number": "(909) 555-9099",
+        "siteurl": "http://www.boguscompany.com",
+        "imagesrc" : "./images/loadingPlaceholder.webp",
+        "membershipLvl" : "silver"
+      },
+      {
+        "name": "Bogus Company",
+        "address": "123 Main Street",
+        "city" : "Redford",
+        "state" : "ST",
+        "phone-number": "(909) 555-9099",
+        "siteurl": "http://www.boguscompany.com",
+        "imagesrc" : "./images/loadingPlaceholder.webp",
+        "membershipLvl" : "silver"
+      },
+      {
+        "name": "Bogus Company",
+        "address": "123 Main Street",
+        "city" : "Redford",
+        "state" : "ST",
+        "phone-number": "(909) 555-9099",
+        "siteurl": "http://www.boguscompany.com",
+        "imagesrc" : "./images/loadingPlaceholder.webp",
+        "membershipLvl" : "silver"
+      },
+      {
+        "name": "Bogus Company",
+        "address": "123 Main Street",
+        "city" : "Redford",
+        "state" : "ST",
+        "phone-number": "(909) 555-9099",
+        "siteurl": "http://www.boguscompany.com",
+        "imagesrc" : "./images/loadingPlaceholder.webp",
+        "membershipLvl" : "silver"
+      },
+      {
+        "name": "Bogus Company",
+        "address": "123 Main Street",
+        "city" : "Redford",
+        "state" : "ST",
+        "phone-number": "(909) 555-9099",
+        "siteurl": "http://www.boguscompany.com",
+        "imagesrc" : "./images/loadingPlaceholder.webp",
+        "membershipLvl" : "silver"
+      },
+      {
+        "name": "Bogus Company",
+        "address": "123 Main Street",
+        "city" : "Redford",
+        "state" : "ST",
+        "phone-number": "(909) 555-9099",
+        "siteurl": "http://www.boguscompany.com",
+        "imagesrc" : "./images/loadingPlaceholder.webp",
+        "membershipLvl" : "silver"
+      }      
+    ]
+  }

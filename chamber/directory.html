@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/medium.css">
     <link rel="stylesheet" href="./styles/large.css">
+    <script defer src="./scripts/directory.js"></script>
     <script defer src="./scripts/chamber.js"></script>
     <title>Redford Chamber of Commerce</title>
 </head>
@@ -33,7 +34,18 @@
         </nav>
         <p class="grid-item" id="currentdate"></p>
     </header>
-    <main></main>
+    <main>
+        <div class="button-box">
+            <button id="gd-btn">
+                <span>Grid View</span>
+            </button>
+            <button id="lst-btn">
+                <span>List View</span>
+            </button>
+        </div>
+        <div id="default" class="default-grid">
+        </div>
+    </main>
     <footer>
         <div id="footertop">
             <img id="logo" src="./images/chamber_of_commerce.webp" alt="Logo">

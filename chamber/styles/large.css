@@ -162,4 +162,11 @@ main .grid-item#join-box{
         margin: auto 30% auto 0;
     }
 
+    /* Discover */
+    .default-grid, .active-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+
 }
