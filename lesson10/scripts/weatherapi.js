@@ -2,7 +2,7 @@ const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 
-const q = "Fairbanks";
+const q = "Redford";
 const units = "imperial";
 const apiid = "485855895463088afe35950e9085cc78"
 
