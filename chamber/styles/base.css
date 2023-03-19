@@ -169,10 +169,9 @@ main .grid-item {
 main .std-btn {
     text-decoration: none;
     display: block;
-    color:var(--text-color-hover);
     width: 30%;
     border: var(--primary-color) solid 5px;
-    color: var(--text-color);
+    color: var(--text-color-hover);
     background-color: var(--secondary-color);
     position: absolute;
     border-radius: 7px;
@@ -182,6 +181,7 @@ main .std-btn {
 
 main .std-btn:hover {
     background-color: var(--border-color);
+    color: var(--text-color);
 }
 
 main .discover-grid {
