@@ -18,6 +18,10 @@ header img {
     width: 100%;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 header {
     background-color: var(--primary-color);
     color: var(--text-color);
@@ -125,6 +129,12 @@ header nav a img {
 main {
     background-color: var(--primary-color);
 }
+
+ 
+.shadow:hover {
+    box-shadow: 0 0 25px var(--secondary-color);        
+}
+
 #banner {
     display: none;
     position: sticky;
@@ -145,11 +155,32 @@ main #main-grid {
 main .grid-item {
     margin: auto;
     width: 95%;
-    height: 200px;
+    height: auto;
     background-color: var(--border-color);
     border: var(--secondary-color) solid 2px;
     text-align: center;
     color: var(--text-color);
+}
+
+#hero-box p {
+    margin: 0;
+}
+
+main .std-btn {
+    text-decoration: none;
+    display: block;
+    width: 30%;
+    border: var(--primary-color) solid 5px;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    position: absolute;
+    border-radius: 7px;
+    z-index: 999;
+    margin: 0;
+}
+
+main .std-btn:hover {
+    background-color: var(--border-color);
 }
 
 main .discover-grid {
@@ -159,13 +190,48 @@ main .discover-grid {
 
 main div#main-grid div.grid-item p {
     margin-bottom: 0;
-    padding-bottom: 16px;
+    /* padding-bottom: 16px; */
     color: var(--text-color);
     height: auto;
 }
 
+.bold {
+    font-weight: bolder;
+    background-color: var(--primary-color);
+    padding: 1rem;
+    margin: 0;
+}
+
+#news-list li {
+    padding: 1rem;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+}
+
+table tr:nth-child(even){
+    background-color: var(--primary-color);
+}
+
+th {
+    background-color: var(--secondary-color);
+    color:var(--text-color-hover);
+    border: 5px solid var(--border-color);
+    border-bottom: 5px var(--primary-color) solid;
+}
+
+td {
+    border: var(--secondary-color) solid 2px;
+}  
+
+td, th {
+    padding: 1rem;
+}
+
 main .grid-item.spotlight {
-    height: fit-content;
+    height: 100%;
     padding-top: 1rem;
     padding-bottom: 1rem;
     display: grid;
@@ -173,17 +239,39 @@ main .grid-item.spotlight {
     position: relative;
 }
 
+main .grid-item.spotlight a {
+    color:var(--secondary-color);
+}
+
+main .grid-item.spotlight img {
+    width: 100%;
+}
+
+main .grid-item.spotlight2 img {
+    object-fit: cover;
+    max-width: 80%;
+}
+
+main .grid-item.spotlight3 img {
+    display: none;
+    object-fit: cover;
+    max-width: 80%;
+}
+
 main .grid-item.spotlight1 {
-    width: 80%;
+    object-fit: cover;
+    max-width: 80%;
 }
 
 main .grid-item.spotlight2 {
-    width: 80%;
+    object-fit: cover;
+    max-width: 80%;
 }
 
 main .grid-item.spotlight3 {
     display: none;
-    width: 80%;
+    object-fit: cover;
+    max-width: 80%;
 }
 
 main .grid-item#join-box {
@@ -191,8 +279,10 @@ main .grid-item#join-box {
 }
 
 picture img {
-    max-width: 100%;
-    max-height: 100%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
 .req {
@@ -358,7 +448,7 @@ footer #myname {
     width: 100%;
     border: solid var(--secondary-color) 2px;
     text-align: center;
-    color: white;     
+    color: white;    
 }
 
 .default-grid .card a, .active-grid .card a {
@@ -366,7 +456,9 @@ footer #myname {
 }
 
 .default-grid .card img, .active-grid .card img {
-    max-width: 100%;
+    width: 100%;
+    height: 200px;
+    background-color: var(--text-color);
     object-fit: cover;
 }
 

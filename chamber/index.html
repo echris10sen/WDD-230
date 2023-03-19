@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./styles/large.css">
     <script defer src="./scripts/chamber.js"></script>
     <script defer src="./scripts/windchill.js"></script>
+    <script src="./scripts/spotlight.js"></script>
     <title>Redford Chamber of Commerce</title>
 </head>
 <body>
@@ -30,7 +31,6 @@
                 <li><a href="./discover.html">Discover</a></li>
                 <li><a href="./directory.html">Directory</a></li>
                 <li><a href="./join.html">Join</a></li>
-                <li><a href="">Contact</a></li>
             </ul>
         </nav>
         <p class="grid-item" id="currentdate"></p>
@@ -38,14 +38,47 @@
     <main>
         <div id="main-grid">
             <div class="grid-item" id="hero-box">
+                <p><a href="./join.html" class="std-btn">Join Now</a></p>
                 <picture>
                     <source media="(min-width:1060px)" srcset="./images/city-photo3.webp">
                     <source media="(min-width:640px)" srcset="./images/city-photo3.webp">
                     <img src="./images/city-photo3.webp" alt="Hero Img">
                 </picture>
             </div>
-            <div class="grid-item" id="news-box">News</div>
-            <div class="grid-item" id="event-box">Events</div>
+            <div class="grid-item" id="news-box">
+                <p class="bold">News</p>
+                <ul id="news-list">
+                    <li>Local Film Girraffe Man and Shoe-box guy out in Theaters</li>
+                    <li>The Facility (town lab) discovers that no matter where you hatch a Godzilla egg it makes a bee-line straight for Tokyo</li>
+                    <li>Notice: Strawberry Snails with pysonic abilities are attacking South Redford</li>
+                    <li>New business being built that Teaches Grasshoppers how to Tango</li>
+            </div>
+            <div class="grid-item" id="event-box">
+                <p class="bold">Events</p>
+                <table>
+                    <thead>
+                        <th>Event</th>
+                        <th>Date/Time</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                Cookies with Candice
+                            </td>
+                            <td>March 19</td>
+                        </tr>
+                        <tr>
+                            <td>1080p Open House</td>
+                            <td>March 25</td>                            
+                        </tr>
+                        <tr>
+                            <td>General Conferenc</td>
+                            <td>April 1st-2nd</td>
+                        </tr>
+                    </tbody>
+                    <tfoot></tfoot>
+                </table>
+            </div>
             <div class="grid-item" id="weather-box">Weather
                 <figure>
                     <img src="" alt="">
@@ -57,9 +90,9 @@
             </div>
             <div class="grid-item" id="join-box">Join</div>
             <div class="grid-item spotlight">
-                <div class="grid-item spotlight1">Company Spotlight 1</div>
-                <div class="grid-item spotlight2">Company Spotlight 2</div>
-                <div class="grid-item spotlight3">Company Spotlight 3</div>
+                <div class="grid-item spotlight1"></div>
+                <div class="grid-item spotlight2"></div>
+                <div class="grid-item spotlight3"></div>
             </div>
         </div>
     </main>

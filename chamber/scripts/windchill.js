@@ -1,8 +1,3 @@
-function randomtemp () {
-    let temp = Math.round(Math.random() * 100 - 50);
-    console.log(temp);
-    return temp;
-}
 const q = "Redford";
 const units = "imperial";
 const apiid = "485855895463088afe35950e9085cc78";

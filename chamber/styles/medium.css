@@ -59,10 +59,6 @@
         grid-column: 1/4;
         grid-row: 4/5;
     }
- 
-    .shadow:hover {
-        box-shadow: 0 0 25px var(--secondary-color);        
-    }
 
     div.grid-item.spotlight {
         width: 100%;

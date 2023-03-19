@@ -114,16 +114,22 @@ main .grid-item#join-box{
     /* Spotlight Grid */
     div.grid-item.spotlight {
         width: 100%;
-        height: 93.25%;
+        height: auto;
         margin: 0;
         grid-column: 4/5;
         grid-row: 1/4;
         grid-template-rows: repeat(3, auto);
         grid-template-columns: none;
-        gap: 0;
+        gap: 5px;
     }
     div.grid-item.spotlight3 {
         display: block;
+    }
+
+    main .grid-item.spotlight3 img{
+        display: block;
+        width: 100%;
+        margin: auto;
     }
 
     form {
