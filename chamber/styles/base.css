@@ -169,6 +169,7 @@ main .grid-item {
 main .std-btn {
     text-decoration: none;
     display: block;
+    color:var(--text-color-hover);
     width: 30%;
     border: var(--primary-color) solid 5px;
     color: var(--text-color);
@@ -241,6 +242,7 @@ main .grid-item.spotlight {
 
 main .grid-item.spotlight a {
     color:var(--secondary-color);
+    background-color: var(--primary-color);
 }
 
 main .grid-item.spotlight img {
