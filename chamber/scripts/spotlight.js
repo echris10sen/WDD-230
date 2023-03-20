@@ -48,12 +48,17 @@ const displaySpotlightData = (companies) => {
         let linkContainer = document.createElement('p');
         let link = document.createElement('a');
         let imgContainer = document.createElement('div')
+        
+        let cap = String(company.membershipLvl);
+        let lvl = cap[0].toUpperCase() + cap.substr(1);
+        
+
         // populate the HTML
         card.setAttribute('class', 'card')
         img.setAttribute('src', `${company.imagesrc}`);
         img.setAttribute('alt', 'business photo');
         name.textContent = company.name;
-        membershipLvl.textContent = `A ${company.membershipLvl} member`
+        membershipLvl.textContent = `A ${lvl} Member`
         link.textContent = company.siteurl;
         link.href = "";
 
