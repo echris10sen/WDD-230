@@ -4,9 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Order Confirmation</title>
+    <meta name="description" content="A Home page for Bountiful Foods which doesn't exist anymore">
+    <link rel="icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./styles/boutifulFoods.css">
+    <script defer src="./scripts/bountiful.js"></script>
+    <script defer src="./scripts/confirm.js"></script>
+    <title>Bountiful Foods</title>
 </head>
 <body>
-    
+    <header>
+        <div class="headGrid">
+            <a href="./home.html"><img src="./images/Bountiful_Foods.webp" alt="Logo"></a>
+            <nav>
+                <button id="menu">
+                    <span id="closed" class="">&equiv;</span>
+                    <span id="open" class="">X</span>
+                </button>
+                <ul Id="navbar" class="">
+                    <a href="./home.html"><li>Home</li></a>
+                    <a href="./fresh.html"><li>Order</li></a>
+                    <a href="./aboutus.html"><li>About Us</li></a>
+                </ul>           
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div id="order-card" class="card">
+            <div class="card">
+                <h1>Confirm Order</h1>
+                <h2>Order Information</h2>
+                <h3>Name</h3>
+                <p id="fn-con"></p>
+                <h3>Email</h3>
+                <p id="email-con"></p>
+                <h3>Phone</h3>
+                <p id="phone-con"></p>
+                <h3>Fruits Added to Your Drink</h3>
+                <ul id="list-con">
+                    <li class="fruit-con"></li>
+                    <li class="fruit-con"></li>
+                    <li class="fruit-con"></li>
+                </ul>
+                <h2>Special Instructions</h2>
+                <p id="spin-con"></p>
+                <h2>Date Ordered</h2>
+                <p>This order was placed on <span class="day"></span> at <span class="time"></span></p>
+            </div>
+            <div class="card" id="nutrition-card">
+                <h2>Nutrition Information</h2>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <hr />
+        <p>&copy; <span id="currentyear"></span> | <span id="myname">Eric Christensen</span> | Bountiful Foods | Last Updated: <span id="lastmodified"></span></p>
+    </footer>
 </body>
 </html>

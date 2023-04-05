@@ -4,9 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <meta name="description" content="A Home page for Bountiful Foods which doesn't exist anymore">
+    <link rel="icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./styles/boutifulFoods.css">
+    <script defer src="./scripts/bountiful.js"></script>
+    <script defer >(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+        ({key: "AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg", v: "weekly"});</script>
+    <script defer src="./scripts/aboutUs.js"></script>
+    <title>Bountiful Foods</title>
 </head>
 <body>
-    
+    <header>
+        <div class="headGrid">
+            <a href="./home.html"><img src="./images/Bountiful_Foods.webp" alt="Logo"></a>
+            <div class="order-head">About Us</div>
+            <nav>
+                <button id="menu">
+                    <span id="closed" class="">&equiv;</span>
+                    <span id="open" class="">X</span>
+                </button>
+                <ul id="navbar" class="">
+                    <a href="./home.html"><li id="active-page">Home</li></a>
+                    <a href="./fresh.html"><li>Order</li></a>
+                    <a href="./aboutus.html"><li>About Us</li></a>
+                </ul>           
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="main-grid">
+            <div class="card">
+                <img src="./images/strawberry farm.jpg" alt="Strawberry Farm" id="strawberryPatch">
+                <h2>About Us</h2>
+                <p>
+                    (Fictional*) 50 years ago our founders came to Carlsbad Califoria and stared our famous Strawberry Farm
+                    After finding success with strawberries we decied to expand. We grew into the 
+                    industrial farm we have today and supply food all across of Southern California with more than just 
+                    strawberries. We now grow 40 different fruits, all grown to perfection and all for you! Our drinks our renowned
+                    for their variety and for their deliciousness!
+                </p>
+                <p class="call-to-action">Come try our delicious drinks!</p>
+                <a href="./fresh.html"><button>Order Now!</button></a>
+            </div>
+            <div class="card">
+                <h2>Contact Us</h2>
+                <p>Call Us: (909) 555-9099</p>
+                <p>Email: bountifulFood028@fakemail.com</p>
+                <p>Our Address: 2907 State St, Carlsbad, CA 92008</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <hr />
+        <p>&copy; <span id="currentyear"></span> | <span id="myname">Eric Christensen</span> | Bountiful Foods | Last Updated: <span id="lastmodified"></span></p>
+    </footer>
 </body>
 </html>

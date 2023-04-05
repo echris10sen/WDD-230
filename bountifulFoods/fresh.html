@@ -4,9 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bountiful Drinks</title>
+    <meta name="description" content="A Home page for Bountiful Foods which doesn't exist anymore">
+    <link rel="icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./styles/boutifulFoods.css">
+    <script defer src="./scripts/bountiful.js"></script>
+    <script defer src="./scripts/getFruitOptions.js"></script>
+    <title>Bountiful Foods</title>
 </head>
 <body>
-    
+    <header>
+        <div class="headGrid">
+            <a href="./home.html"><img src="./images/Bountiful_Foods.webp" alt="Logo"></a>
+            <div class="order-head">Order A Drink</div>
+            <nav>
+                <button id="menu">
+                    <span id="closed" class="">&equiv;</span>
+                    <span id="open" class="">X</span>
+                </button>
+                <ul id="navbar" class="">
+                    <a href="./home.html"><li>Home</li></a>
+                    <a href="./fresh.html"><li id="active-page">Order</li></a>
+                    <a href="./aboutus.html"><li>About Us</li></a>
+                </ul>           
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form action="./order.html" method="get" id="myform">
+            <p>
+                <h1>How Would You Like It?</h1>
+            </p>
+            <p>    
+                <label for="firstName"> First Name: <input type="text" name="firstName" required></label>
+            </p>
+            <p>
+                <label for="mail">E-mail: <input type="email" name="mail"></label>
+            </p>
+            <p>
+                <label for="phone">Phone #:<input type="tel" name="phone" required></label>
+            </p>
+                <div id="checkbox-btns">
+            
+                    <label id="lab-flavor1"></label>
+            
+                    <label id="lab-flavor2"></label>
+            
+                    <label id="lab-flavor3"></label>
+            </div>
+            <p id="spin-label">Special Instructions:</p>
+            <label for="spin"><textarea name="spin" id="spin" cols="30" rows="10" value="none" placeholder="Special Instructions"></textarea></label>
+            <button type="submit" id="order" name="time">Place Order</button>
+        </form>
+    </main>
+    <footer>
+        <hr />
+        <p>&copy; <span id="currentyear"></span> | <span id="myname">Eric Christensen</span> | Bountiful Foods | Last Updated: <span id="lastmodified"></span></p>
+    </footer>
 </body>
 </html>

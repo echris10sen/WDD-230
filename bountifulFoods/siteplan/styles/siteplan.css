@@ -88,13 +88,15 @@ p {
 }
 .accent1 {
   background-color: var(--accent1-color);
+  color: var(--primary-color);
 }
 .accent2{
   background-color: var(--accent2-color);
+  color:var(--primary-color);
 }
 p.colored {
   background-color: var(--paragraph-background-color);
-  color: var(--accent2-color);
+  color: var(--primary-color);
 }
 nav {
   background-color: var(--nav-background-color);
