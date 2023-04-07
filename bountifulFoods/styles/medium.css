@@ -1,0 +1,28 @@
+@media screen and (min-width: 640px) {
+    .headGrid {
+        height: 100px;
+        display: flex;
+        gap: 10%;
+    }
+
+    .headGrid img {
+        display: block;
+    }
+
+    .headGrid #menu{
+        display: none;
+    }
+
+    .headGrid div {
+        margin-top: 1.5rem;
+    }
+
+    .headGrid #navbar {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .headGrid .od-con {
+        color: var(--accent2-color);
+    }
+}
