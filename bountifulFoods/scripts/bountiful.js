@@ -22,7 +22,6 @@ document.querySelector('#lastmodified').textContent = document.lastModified;
 
 // I borrowed this from your file
 // Gather the images to load
-adding and remeoving things
 let imagesToLoad = document.querySelectorAll("img[data-src]");
 
 // Set up the load images function which switches the src and the data-src attributes.
