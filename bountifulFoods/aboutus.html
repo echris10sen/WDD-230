@@ -8,6 +8,7 @@
     <link rel="icon" href="./images/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./styles/boutifulFoods.css">
+    <link rel="stylesheet" href="./styles/large.css">
     <script defer src="./scripts/bountiful.js"></script>
     <script defer >(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
         ({key: "AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg", v: "weekly"});</script>
@@ -34,7 +35,7 @@
     </header>
     <main>
         <div class="main-grid">
-            <div class="card">
+            <div class="card card1">
                 <img src="./images/strawberry farm.jpg" alt="Strawberry Farm" id="strawberryPatch">
                 <h2>About Us</h2>
                 <p>
@@ -47,11 +48,11 @@
                 <p class="call-to-action">Come try our delicious drinks!</p>
                 <a href="./fresh.html"><button>Order Now!</button></a>
             </div>
-            <div class="card">
+            <div class="card card2" id="ab-con">
                 <h2>Contact Us</h2>
                 <p>Call Us: (909) 555-9099</p>
                 <p>Email: bountifulFood028@fakemail.com</p>
-                <p>Our Address: 2907 State St, Carlsbad, CA 92008</p>
+                <p>Our Address: <a href="https://www.bing.com/search?q=2907+State+St%2C+Carlsbad%2C+CA+92008&cvid=1c2afa555d9b41e9909e720bd574264b&aqs=edge..69i57j0l2.918j0j1&pglt=41&FORM=ANNTA1&PC=HCTS&cp=33.160515%7E-117.349478&lvl=14.5">2907 State St, Carlsbad, CA 92008</a></p>
             </div>
         </div>
     </main>
